@@ -52,10 +52,8 @@ public class signup_page extends Config {
      public WebElement uniqueEmailEl;
 
 
-
-
-
-     //****************** login page^^^^^^^element ***********
+     //****************** SignUp page^^^^^^^element ***********
+    //****************** SignUp page element Execution***********
 
 
     public void firstnamePlaceHolder(){
