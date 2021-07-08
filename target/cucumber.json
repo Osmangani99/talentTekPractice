@@ -1,0 +1,64 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-08T18:40:01.454Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4847000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "verify place holder for userName and Password",
+        "description": "",
+        "id": "signup;verify-place-holder-for-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 72000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am at TalentTek",
+            "match": {
+              "location": "stepDef.login_step.iAmAtTalentTek()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2125000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I verify there is placeHolder for userName and Password",
+            "match": {
+              "location": "stepDef.login_step.iVerifyThereIsPlaceHolderForUserNameAndPassword()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginPlaceHolder"
+          }
+        ]
+      }
+    ],
+    "name": "Signup",
+    "description": "",
+    "id": "signup",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/FeatureFiles/signup.feature",
+    "tags": []
+  }
+]

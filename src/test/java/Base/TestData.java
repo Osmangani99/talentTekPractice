@@ -1,2 +1,4 @@
-package Base;public class TestData {
+package Base;
+
+public class TestData {
 }
