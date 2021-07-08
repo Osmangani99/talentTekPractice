@@ -7,11 +7,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
-public class login_page extends Config {
+public class signup_page extends Config {
 
 
-     public login_page (WebDriver driver){ PageFactory.initElements(driver,this); }
+     public signup_page(WebDriver driver){ PageFactory.initElements(driver,this); }
 
 
      @FindBy(how = How.XPATH,using ="//input[@placeholder=\"First Name\"]")
@@ -44,6 +45,11 @@ public class login_page extends Config {
      @FindBy(how = How.ID,using = "defaultCheck1")
      public WebElement agreeCheckBoxEl;
 
+     @FindBy(how = How.XPATH,using ="//button[@type=\"submit\"]")
+     public WebElement submitButtonEl;
+
+     @FindBy(how = How.XPATH,using = "//*[@id=\"error_message\"]/div/p")
+     public WebElement uniqueEmailEl;
 
 
 
@@ -122,6 +128,23 @@ public class login_page extends Config {
         boolean agreeCheckBoxField = agreeCheckBoxEl.isDisplayed();
         System.out.println("Trams and condition check box is Displayed------------->"+agreeCheckBoxField); }
 
+        public void submitButton (){
+
+        submitButtonEl.click();
+        boolean accountcreateButton = submitButtonEl.isDisplayed();
+        System.out.println("This is the account create button---------------->>"+accountcreateButton); }
+
+        public void UniqueEmailVerification(){
+
+       String validationErroMsg = uniqueEmailEl.getText();
+       System.out.println("This the validation error message I have----------->>"+validationErroMsg);
+       String requiredErroMsg ="The Email-ID field must contain a unique value.";
+
+            Assert.assertEquals(validationErroMsg,requiredErroMsg);
+
+
+
+        }
 
 
 

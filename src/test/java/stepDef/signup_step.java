@@ -3,11 +3,11 @@ package stepDef;
 import Base.Config;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import pageObject.login_page;
+import pageObject.signup_page;
 
-public class login_step extends Config {
+public class signup_step extends Config {
 
-    login_page login = new login_page (driver);
+    signup_page login = new signup_page(driver);
 
 
     @Given("I am at TalentTek")
@@ -28,8 +28,16 @@ public class login_step extends Config {
         login.yearDropDown();
         login.genderSelect();
         login.agreeCkeckBoxClick();
+        login.submitButton();
 
 
+    }
+
+    @And("I verify email should be unit")
+    public void iVerifyEmailShouldBeUnit() {
+
+
+        login.UniqueEmailVerification();
 
     }
 }
