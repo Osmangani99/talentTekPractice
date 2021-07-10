@@ -3,5 +3,7 @@ pageObject\signup_page.class
 Base\Config.class
 stepDef\hook.class
 Base\Util.class
+stepDef\login_step.class
 Base\TestData.class
+pageObject\login_page.class
 TestRunner.class

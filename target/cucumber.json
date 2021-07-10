@@ -3,11 +3,119 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-07-08T21:29:11.122Z",
+        "start_timestamp": "2021-07-10T16:26:35.711Z",
         "before": [
           {
             "result": {
-              "duration": 3549000000,
+              "duration": 3429000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "verify user can login with valid credential",
+        "description": "",
+        "id": "login;verify-user-can-login-with-valid-credential",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 42000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am at TalentTek login page",
+            "match": {
+              "location": "stepDef.login_step.iAmAtTalentTekLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 748000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input valid ID and password",
+            "match": {
+              "location": "stepDef.login_step.iInputValidIDAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click login",
+            "match": {
+              "location": "stepDef.login_step.iClickLogin()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginPlaceholder"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-10T16:26:40.048Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2001000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "verify user password accept integer value",
+        "description": "",
+        "id": "login;verify-user-password-accept-integer-value",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am at TalentTek login page",
+            "match": {
+              "location": "stepDef.login_step.iAmAtTalentTekLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/FeatureFiles/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-10T16:26:42.054Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2079000000,
               "status": "passed"
             },
             "match": {
@@ -24,7 +132,7 @@
         "steps": [
           {
             "result": {
-              "duration": 52000000,
+              "duration": 9000000,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 2289000000,
+              "duration": 2214000000,
               "status": "passed"
             },
             "line": 6,
@@ -48,7 +156,7 @@
           },
           {
             "result": {
-              "duration": 2386000000,
+              "duration": 100000000,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +169,7 @@
         ],
         "tags": [
           {
-            "name": "@loginPlaceHolder"
+            "name": "@SignupPlaceHolder"
           }
         ]
       }
