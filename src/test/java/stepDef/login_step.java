@@ -30,4 +30,24 @@ public class login_step extends Config {
 
         loginStep.loginSubmitButton();
     }
+
+    @And("I input valid ID and invalid password")
+    public void iInputValidIDAndInvalidPassword() {
+
+
+        loginStep.loginPage();
+        loginStep.LoginIdOrEmail();
+        loginStep.loginInvalidPassword();
+
+    }
+
+
+    @And("I input Invalid ID and valid password")
+    public void iInputInvalidIDAndValidPassword() {
+
+        loginStep.loginPage();
+        loginStep.loginWithInvalidID();
+        loginStep.loginPassword();
+
+    }
 }

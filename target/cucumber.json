@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-07-10T17:55:49.372Z",
+        "start_timestamp": "2021-07-12T14:56:03.259Z",
         "before": [
           {
             "result": {
-              "duration": 2999000000,
+              "duration": 3579000000,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 25000000,
+              "duration": 33000000,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 667000000,
+              "duration": 1013000000,
               "status": "passed"
             },
             "line": 6,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 68000000,
+              "duration": 64000000,
               "status": "passed"
             },
             "line": 7,
@@ -66,11 +66,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-07-10T17:55:53.155Z",
+        "start_timestamp": "2021-07-12T14:56:07.984Z",
         "before": [
           {
             "result": {
-              "duration": 1722000000,
+              "duration": 1985000000,
               "status": "passed"
             },
             "match": {
@@ -78,10 +78,10 @@
             }
           }
         ],
-        "line": 9,
-        "name": "verify user password accept integer value",
+        "line": 10,
+        "name": "verify user can login with valid ID and invalid password",
         "description": "",
-        "id": "login;verify-user-password-accept-integer-value",
+        "id": "login;verify-user-can-login-with-valid-id-and-invalid-password",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -89,12 +89,104 @@
             "result": {
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "I am at TalentTek login page",
             "match": {
               "location": "stepDef.login_step.iAmAtTalentTekLoginPage()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 583000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I input valid ID and invalid password",
+            "match": {
+              "location": "stepDef.login_step.iInputValidIDAndInvalidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click login",
+            "match": {
+              "location": "stepDef.login_step.iClickLogin()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginWithInvalidPassword"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-12T14:56:10.623Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2144000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "verify user can login with Invalid ID and valid password",
+        "description": "",
+        "id": "login;verify-user-can-login-with-invalid-id-and-valid-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am at TalentTek login page",
+            "match": {
+              "location": "stepDef.login_step.iAmAtTalentTekLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 651000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I input Invalid ID and valid password",
+            "match": {
+              "location": "stepDef.login_step.iInputInvalidIDAndValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click login",
+            "match": {
+              "location": "stepDef.login_step.iClickLogin()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginWithInvalidIDValidPassword"
           }
         ]
       }
@@ -110,11 +202,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-07-10T17:55:54.880Z",
+        "start_timestamp": "2021-07-12T14:56:13.487Z",
         "before": [
           {
             "result": {
-              "duration": 1734000000,
+              "duration": 1872000000,
               "status": "passed"
             },
             "match": {
@@ -131,7 +223,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4000000,
+              "duration": 5000000,
               "status": "passed"
             },
             "line": 5,
@@ -143,7 +235,7 @@
           },
           {
             "result": {
-              "duration": 1635000000,
+              "duration": 1568000000,
               "status": "passed"
             },
             "line": 6,
@@ -155,7 +247,7 @@
           },
           {
             "result": {
-              "duration": 32000000,
+              "duration": 88000000,
               "status": "passed"
             },
             "line": 7,

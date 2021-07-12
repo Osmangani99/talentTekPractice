@@ -49,32 +49,32 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels: ["@SignupPlaceHolder","@loginPlaceholder"],
+        labels: ["@SignupPlaceHolder","@loginPlaceholder","@loginWithInvalidIDValidPassword","@loginWithInvalidPassword"],
         datasets: [
             {
                 label: 'Passed',
                 backgroundColor: "#92DD96",
-                data: [100.00, 100.00]
+                data: [100.00, 100.00, 100.00, 100.00]
             },
             {
                 label: 'Failed',
                 backgroundColor: "#F2928C",
-                data: [0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Skipped',
                 backgroundColor: "#8AF",
-                data: [0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Pending',
                 backgroundColor: "#F5F28F",
-                data: [0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Undefined',
                 backgroundColor: "#F5B975",
-                data: [0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00]
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>talentTekPractice</td>
                           <td>1</td>
-                        <td>10 Jul 2021, 13:55</td>
+                        <td>12 Jul 2021, 10:56</td>
           </tr>
         </tbody>
       </table>
@@ -203,7 +203,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">3</td>
-        <td class="duration" data-value="1671000000">1s 671ms</td>
+        <td class="duration" data-value="1661000000">1s 661ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -218,24 +218,54 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">3</td>
-        <td class="duration" data-value="760000000">760ms</td>
+        <td class="duration" data-value="1110000000">1s 110ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="loginWithInvalidIDValidPassword.html">@loginWithInvalidIDValidPassword</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+        <td class="duration" data-value="717000000">717ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="loginWithInvalidPassword.html">@loginWithInvalidPassword</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+        <td class="duration" data-value="650000000">650ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>2</td>
-            <td>2</td>
+      <td>4</td>
+            <td>4</td>
       <td>0</td>
-      <td>2</td>
-      <td>6</td>
-      <td>0</td>
-      <td>0</td>
+      <td>4</td>
+      <td>12</td>
       <td>0</td>
       <td>0</td>
-      <td>6</td>
-      <td class="duration">2s 431ms</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12</td>
+      <td class="duration">4s 138ms</td>
       <td></td>
     </tr>
     <tr>

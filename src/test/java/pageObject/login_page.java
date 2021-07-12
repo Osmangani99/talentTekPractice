@@ -28,24 +28,33 @@ public class login_page extends Config {
     //************ login page ^^^^^^^^^^^^elements execution ////////////
 
 
-    public void loginPage(){
+    // click login option in the right corner of the page
+    public void loginPage(){ loginPageEl.click(); }
 
-        loginPageEl.click();
-    }
+    // input email or ID
+    public void LoginIdOrEmail(){ IdOrEmailEl.sendKeys("osmangani360@gmail.com"); }
 
-    public void LoginIdOrEmail(){
-
-        IdOrEmailEl.sendKeys("osmangani360@gmail.com");
-    }
-
+    // input password
     public void loginPassword(){
         PasswordEl.sendKeys("osman123");
     }
 
-    public void loginSubmitButton(){
+    // try to login with invalid password
+    public void loginInvalidPassword(){ PasswordEl.sendKeys("osman"); }
 
-        loginButtonEl.click();
+    // Click login submit button
+    public void loginSubmitButton(){ loginButtonEl.click(); }
+
+    // Try to login with Invalid ID
+
+    public void loginWithInvalidID(){
+
+        IdOrEmailEl.sendKeys("osman");
+
+
     }
+
+
 
 
 
